@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      
+      <meta name="author" content="Daniel Van Dyk">
+      <meta name="keywords" content="study, abroad, blog, adventure, university, where, should, i, study">
+      <meta name="description" content="It is a website for the study abroad community to inform others">
+      <title>Get Featured</title>
+      <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style2.css">
+      <script src="jquery-3.2.1.min.js"></script>
+      <script src="jquery-validation-1.17.0/dist/jquery.validate.min.js"></script>"
+      <script> $(document).ready(function(){
+        $("#myform").validate({
+            rules: {
+                name: "required",
+                country: "required",
+                grade: "required",
+                email: {
+                  required: true,
+                },
+                
+            },
+            messages: {
+            name: " Please specify your name",
+            country: " Please specify country",
+            grade: "Choose time period",
+            email: "ex. name@domain.com",
+             },
+        });
+       });
+      </script>
+    </head>
+        
+    <body>
+    <div id="header">
+        <img src="comeon2.png" class="box" alt="logo"/>
+        <p class="box slogan">For people like us, by students like you!</p>
+        <div class="box bar">
+          <ul>
+            <li><a href="home2.html" class="white"> | Home</a></li>
+            <li><a href="home2.html" class="white"> | Countries</a></li>
+            <li><a href="whoarewe.html" class="white">| Who are we?</a></li>
+            <li><a href="form2.html" class="white">| Get Featured</a></li>
+          </ul>
+        </div>
+    </div>
+    
+    <div id="allcontainer">
+      <p  class= "question">What does it mean to be featured?</p>
+      <p class="statement">Share your adventure and influence another student with guidence and first hand experience you wish you had.</p>
+      <br>
+      <p class="question">Don't you need more information to showcase my experience like the others I've seen on the website?</p>
+      <p class="statement"> Yes we do! The point is everyone has a different approach to showcase themselves (pics, blog, vlog, combinations), we will collect more information after we contact.</p>
+      <br>
+      <p class= "statement"> In our rapid age of technology growth it has become easy to influence and inform people. Studying abroad is becoming extremley popular, the problem is who do we really share with? Our followers on social media, family, regular friends? Its our job as the "study abroad community" to change more lives within reach. What if someone missed out on an abroad experience, or was misinformed by the internet on realities of the country? We need to present what happened to us, first hand student accounts, the amazings, goods, bads, and uglies.  </p>
+      <br>
+      <div id="content">
+       <form method="POST" id="myform" action="http://szamtud.uni-corvinus.hu/~blang/receive.php" novalidate="novalidate">
+        <table>
+          <tr class="center">
+            <td colspan="2"><h2>Share Yourself</h2></td>
+          </tr>
+          <tr>
+            <td><label for="name">Your name</label></td>
+            <td><input size="30" type="text" name="name" ><br></td>
+          </tr>
+          <tr>
+            <td><label for="country">Where did you go?</label></td>
+            <td><input  size="30" type="text" name="country"></td>
+          </tr>
+          <tr>
+            <td>What is/was your major (general)?</td>
+            <td><select size="1" name="major">
+              <option value="science">science</option>
+              <option value="buisness">buisness</option>
+              <option value="arts">arts</option>
+              <option value="other">other</option>
+              </select></td>
+          </tr>
+          <tr>
+            <td rowspan="2">When did you go abroad?</td>
+            <td><label for="high"> high school</label>
+            <input   name="grade" type="radio" >
+            </td>
+          </tr>
+          <tr>
+            <td><label for="college">college</label>
+            <input   name="grade" type="radio" >
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email"> Email used to contact you with next step</label></td>
+            <td><input id="email" size="30" name="email" type="text" ></td>
+          </tr>
+          <tr>
+            <td> Impress us by explaining why you should be featured! *optional* </td>
+            <td><textarea rows="10" cols="30" name="comments">      </textarea></td>
+          </tr>
+          <tr>
+            <td>Recieve our newsletter once a week? *optional*</td>
+            <td> <input type="checkbox" name="accept"></td>
+          </tr>
+          <tr class="center">
+            <td colspan="2"><input type="submit" class="button" value="Send" >
+            <input type="reset" class="button" value="Reset" ></td>
+          </tr>
+        </table>
+      </form>
+     </div>
+    </div>
+    <footer>Created by: Daniel Van Dyk</footer>
+    </body>
+    </html>
+    
